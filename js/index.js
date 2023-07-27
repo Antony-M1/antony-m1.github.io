@@ -5,3 +5,7 @@ fetch("./templates/navBar.html")
     navBarContainer.innerHTML = content;
   })
   .catch((error) => console.error("Error fetching two.html:", error));
+
+
+
+console.log('Working')
