@@ -13,15 +13,7 @@
 <body>
     <div id="navBarContainer"></div>
 
-    <script>
-    // Fetch the content of two.html and insert it into the contentContainer div
-    fetch('./templates/navBar.html')
-      .then(response => response.text())
-      .then(content => {
-        const navBarContainer = document.getElementById('navBarContainer');
-        navBarContainer.innerHTML = content;
-      })
-      .catch(error => console.error('Error fetching two.html:', error));
-  </script>
+
 </body>
+<script src="./js/index.js"></script>
 </html>
