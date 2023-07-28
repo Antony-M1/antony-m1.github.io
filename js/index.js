@@ -16,5 +16,13 @@ fetch("./templates/aboutMe.html")
   .catch((error) => console.error("Error fetching two.html:", error));aboutMe;
 
 
+fetch("./templates/aboutMainContent.html")
+  .then((response) => response.text())
+  .then((content) => {
+    const aboutMainContent = document.getElementById("aboutMainContent");
+    aboutMainContent.innerHTML = content;
+  })
+  .catch((error) => console.error("Error fetching two.html:", error));
+
 
 console.log('Working')
