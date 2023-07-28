@@ -7,5 +7,22 @@
 }
 
 #aboutSummary {
-    padding-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+   padding-left: 25px;
+}
+
+#aboutSummary-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#aboutSummary-li {
+  flex: 0 0 calc(33.33% - 10px); /* For 3 items in a row, adjust this based on your needs */
+  /* Add margin or padding as desired */
+  text-align: center;
+  border: 1px solid #ccc;
 }
