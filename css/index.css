@@ -5,3 +5,7 @@
 .content-body {
     color: darkgoldenrod;
 }
+
+#aboutSummary {
+    padding-left: 25px;
+}
