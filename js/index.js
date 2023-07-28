@@ -25,4 +25,13 @@ fetch("./templates/aboutMainContent.html")
   .catch((error) => console.error("Error fetching two.html:", error));
 
 
+fetch("./templates/projectDetails.html")
+  .then((response) => response.text())
+  .then((content) => {
+    const projectDetails = document.getElementById("projectDetails");
+    projectDetails.innerHTML = content;
+  })
+  .catch((error) => console.error("Error fetching two.html:", error));
+
+
 console.log('Working')
